@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viet's game</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" async></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="window">
+            <div class="taskplace">
+
+                <div class="task">
+                       <span id="cof1"></span>
+                       <span class="formula">x</span>
+                       <sup>2</sup>
+                       <span id="sign1">+</span>
+                       <span id="cof2">b</span>
+                        <span class="formula">x</span>
+                        <span id="sign2">+</span>
+                        <span id="cof3">c</span> = 0
+                </div>
+
+                <div class="values">
+                    <div class="value"><span>X</span><sub>1</sub>=
+                        </div><input id="x1" type="number" placeholder="?">
+                    <div class="value"><span>X</span><sub>2</sub>=
+                        </div><input id="x2" type="number" placeholder="?">
+                    
+                </div>
+
+                <button id="check">Check</button>
+
+                <div class="info">
+                    <div class="timer">
+                        <!-- <span id="minutes">00</span> -->
+                         <span id="seconds">00</span><sub>sec</sub>
+                    </div>
+
+                    <div class="points">
+                        Points: <span id="points">0</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
