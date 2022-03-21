@@ -7,11 +7,37 @@
     <title>Viet's game</title>
     <link rel="stylesheet" href="main.css">
     <script src="main.js" async></script>
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <div class="wrapper">
         <div class="window">
-            <div class="taskplace">
+            <header>
+                <a href="https://www.instagram.com/sherinurislam/" target="_blank" rel="noopener noreferrer">powered by sherinurislam</a>
+            <div class="audio">
+                <input type="checkbox" name="audio" id="audio" checked> <label for="audio">Звук</label></div>  
+            </header>
+               
+            <div class="menu">
+                <h1 class="title">VIET'S GAME</h1>
+                <div class="subtitle">
+                    <p>попробуйте найти корни уравнений с помощью теоремы Виета на скорость.</p>
+                </div>
+
+                <p class="subtitle">выберите сложность:</p>   
+                <div class="menu__inner">
+
+                              
+                <ul class="levels">
+                    <li><button class="btn easyBtn" title="Все формулы изначально приведённые, легкий диапазон коэффицентов.">легкий</button></li>
+                    <li><button class="btn normalBtn" title="Все формулы изначально приведённые, средний диапазон коэффицентов.">средний</button></li>
+                    <li><button class="btn hardBtn" title="Формулы требуют приведения, сложный диапазон коэффицентов.">сложный</button></li>
+                </ul>
+
+                </div>
+                
+            </div>
+            <div class="taskplace disabled">
 
                 <div class="task">
                        <span id="cof1"></span>
@@ -25,14 +51,15 @@
                 </div>
 
                 <div class="values">
-                    <div class="value"><span>X</span><sub>1</sub>=
+                    <div class="value"><span>X</span><sub>1</sub> = 
                         </div><input id="x1" type="number" placeholder="?">
-                    <div class="value"><span>X</span><sub>2</sub>=
+                    <div class="value"><span>X</span><sub>2</sub> = 
                         </div><input id="x2" type="number" placeholder="?">
                     
                 </div>
-
-                <button id="check">Check</button>
+                
+                <div><button class="btn" id="check">проверить</button></div>
+                
 
                 <div class="info">
                     <div class="timer">
@@ -41,12 +68,14 @@
                     </div>
 
                     <div class="points">
-                        Points: <span id="points">0</span>
+                        очки: <span id="points">0</span><sup id="po"></sup>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+
+
 </body>
 </html>
